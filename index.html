@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script>
+        // tailwind.config = {
+        //     darkMode: 'class',
+        //     theme: {
+        //         extend: {
+        //         animation: {
+        //         'spin-slow': 'spin 3s linear infinite',
+        //         'goyang' : 'goyang 1s ease-in-out infinite',
+        //         }, 
+        //         keyframes: {
+        //             goyang: {
+        //                 '0%, 100%' : { transform: 'rotate (-10deg)'},
+        //                 '50%': { transform: 'rotate(10deg)'},
+        //             }, 
+        //         },
+        //     }, },
+        // };
+    </script>
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <title>TailwindCSS</title>
+    <!-- <style type="text/tailwindcss">
+       
+    </style> -->
+
+</head>
+<body class="dark:bg-neutral-800 dark:text-slate-50">
+    <h1 class="text-7xl font-bold text-center my-10">Mari Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text">TailwindCSS</span></h1>
+
+    <section class="mb-5 bg-gradient-to-tr from-indigo-200 via-red-500 to-yellow-700">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-4">Margin</div>
+        <div class="p-4">Padding</div>
+    </section>
+
+    <section class="mb-5 bg-green-200">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-yellow-200 mx-auto text-center">Width</div>
+    </section>
+
+    <section class="font-serif max-w-5xl mx-auto">
+        <h2 class="mb-4 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+        <div class="mb-4 text-lg text-gray-500">By <a href="#" class="text-greey-900 font-bold">Herfando</a>, 27 Maret 2025</div>
+        <p class="mb-4">Lorem ipsum, dolor sit amet <a href="#" class="underline font-semibold text-blue-800">consectetur</a>  adipisicing elit. Explicabo pariatur, doloremque aut accusamus nulla quibusdam, corporis ipsam optio porro laborum incidunt cupiditate iste asperiores magni. Doloribus obcaecati veritatis distinctio perspiciatis eveniet nulla ullam cumque. Porro vel fugiat officiis quisquam. Laboriosam voluptate veniam omnis enim assumenda eveniet minus blanditiis voluptatem eaque.</p>
+        <blockquote class="mb-4 italic font-thin text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea in voluptates blanditiis architecto ex perspiciatis odio quos placeat nisi.</blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis enim vel officia maiores eligendi tempore dolores sint est provident facere praesentium voluptate, maxime eveniet nulla sit blanditiis harum eos?</p>
+    </section>
+
+    <div class="bg-[url(/img/laptop.jpg)] rounded-full h-96 bg-cover max-w-xl mx-auto my-10 flex">
+
+    <div class="rounded-full m-auto w-[200px] h-[200px] bg-white/30 backdrop-blur-md"></div>
+
+</div>
+
+    <hr class="my-20" />
+
+    <div class="flex justify-center">
+        <span class="dark:text-white text-sm text-slate-900 mr-2">Light</span>
+        <input type="checkbox" id="toggle" class="hidden">
+        <label for="toggle">
+            <div class="cursor-pointer w-9 h-5 bg-slate-600 p-1 rounded-full flex items-center">
+                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="dark:text-white text-sm text-slate-900 ml-2">Dark</span>
+    </div>
+    <button class="dark:text-slate-950 dark:bg-slate-300 focus:ring focus:bg-sky-300 active:bg-sky-900 bg-bl text-white font-semibold hover:bg-sky-800 mx-auto block my-10 bg-sky-500 px-5 py-2 rounded-full">Simpan</button>
+
+    <div class="group hover:bg-sky-400 p-5 shadow-md max-w-lg my-10 border border-slate-200 rounded-xl mx-auto">
+    <h5 class="dark:text-white selection:bg-white selection:text-slate-600 group-hover:text-white text-lg mb-3 font-bold text-slate-700">My Card</h5>
+    <p class="dark:text-white first-letter:mr-3 first-letter:float-left first-line:uppercase first-line:tracking-widest first-letter:text-7xl selection:bg-white selection:text-slate-600 group-hover:text-white text-slate-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse nobis explicabo asperiores provident sint commodi. Natus, debitis iste unde ad perferendis, nostrum quos similique odio aliquam praesentium at blanditiis? Facere quibusdam esse doloremque itaque? Quis, porro officiis. Culpa perspiciatis reiciendis consectetur, ipsam, consequuntur dignissimos laudantium corrupti facere delectus voluptatem numquam?</p>
+    </div>
+
+    <div class="my-3 p-5 rounded-xl mx-auto max-w-lg border border-slate-200 ">
+        <form action="">
+            <label for="email">
+                <span class="dark:text-white after:ml-0.5 after:text-pink-500 after:content-['*'] font-semibold mb-1 text-slate-700">Email</span>
+                <input type="email" id="email" placeholder="masukkan email..." class="peer invalid:focus:ring-pink-700 invalid:focus:border-pink-700 invalid:text-pink-700 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 placeholder:text-slate-400 text-sm px-3 py-2 border border-slate-200 shadow rounded  w-full block">
+            <p class="peer-invalid:visible invisible text-sm m-1 text-pink-700">Email tidak valid</p>
+            
+            </label>
+
+        </form>
+    </div>
+
+    <script>
+        const checkbox = document.querySelector
+        ('#toggle');
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function () {
+          checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        });
+    </script>
+
+    <hr class="my-20">
+
+    <div class="origin-top-left hover:bg-pink-500 transition hover:rotate-180 w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg"></div>
+
+    <div class=" mt-20 w-40 h-40 mx-auto group">
+        <div class="ease-linier duration-1000 origin-top-left transition group-hover:rotate-180 w-full h-full rounded-lg shadow-lg bg-sky-500"></div>
+    </div>
+
+    <div class="animate-goyang mt-5 bg-pink-500 w-20 h-20 mx-auto rounded-lg shadow-lg"></div>
+
+    <div class="ml-40 animate-spin mt-5 bg-green-500 w-20 h-20 rounded-lg shadow-lg"></div>
+    <div class="ml-80 animate-ping mt-[-60px] bg-red-500 w-10 h-10 rounded-lg shadow-lg"></div>
+    <div class="ml-120 animate-pulse mt-[-60px] bg-sky-500 w-20 h-20 rounded-lg shadow-lg"></div>
+    <div class="ml-160 animate-bounce mt-[-60px] bg-yellow-500 w-20 h-20 rounded-lg shadow-lg"></div>
+
+    <hr class="my-10 border-t-4">
+    
+    <div class="container mx-auto">
+        <div class="relative border rounded-lg shadow-lg p-5 mx-auto">
+            <div class="cursor-pointer -top-5 left-1/2 -translate-x-1/2 absolute w-10 h-10 rounded-full shadow-lg dark:bg-sky-300 animate-bounce flex"><span class="text-xl m-auto">🔝</span></div>
+            <div class="cursor-pointer bottom-5 right-5 w-10 h-10 rounded-full shadow-lg dark:bg-sky-300 animate-bounce flex fixed"><a href="#" class="text-xl m-auto">🔝</a></div>
+            <div class="cursor-pointer absolute -top-5 -left-5"><span class="text-2xl mx-auto">😁</span></div>
+            <img src="../img/alphard.jpg" class="mr-5 float-left" alt="alphard" width="150"/>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, assumenda repellat? Repudiandae natus, id adipisci culpa reiciendis veniam eius voluptatum ullam quisquam numquam hic voluptatibus reprehenderit ipsa cupiditate impedit dolor. Rerum provident minus deserunt dolore eveniet, recusandae consequuntur. Aperiam neque assumenda quidem, cupiditate ullam deleniti nostrum error atque libero! Optio provident officia distinctio. Ut natus odio officia porro iusto illum provident amet voluptatibus nostrum, minima impedit architecto repellendus aliquam saepe et, eos exercitationem est ex assumenda, voluptas veniam. Officia sunt adipisci rem voluptas cupiditate explicabo. Ipsam quisquam fugiat quasi, suscipit sed distinctio quod asperiores, dolore blanditiis accusantium ex veritatis molestiae.</p>
+    </div>
+
+    <div class="columns-3 container mx-auto border mt-2 rounded-lg shadow-lg p-10 relative">
+    <img src="https://picsum.photos/500/300" alt="Gambar Acak" class="mb-4">
+    <img src="https://picsum.photos/500/300" alt="Gambar Acak" class="mb-4">
+    <img src="https://picsum.photos/500/300" alt="Gambar Acak" class="mb-4">
+    <img src="https://picsum.photos/500/300" alt="Gambar Acak" class="mb-4">
+    <img src="https://picsum.photos/500/300" alt="Gambar Acak" class="mb-4">
+    <img src="https://picsum.photos/500/300" alt="Gambar Acak" class="mb-4">
+    </div>
+    
+    <hr class="my-24 border-t-4"/>
+
+    <div class="border lg:p-0 lg:max-w-full lg:flex container px-6 max-w-md mx-auto sm:max-w-xl md:max-w-5xl">
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="md:text-6xl sm:text-5xl font-bold text-4xl mb-2">Her<span class="text-sky-500">fando</span></h3>
+            <img src="../img/rumah.jpg" alt="rumah" class="lg:hidden sm:h-64 sm:w-full sm:object-cover sm:object-center sm:mt-6 mx-auto rounded-xl shadow-xl">
+            <h2 class="sm:mt-8 sm:text-4xl mt-6 text-2xl font-semibold">Mari Miliki Rumah Impian<h2>
+            <p 
+            class="mt-2 sm:mt-4 sm:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nulla natus cupiditate, beatae nihil recusandae dolor temporibus suscipit earum esse. Et deserunt iusto quod magnam ipsam architecto accusamus enim dignissimos sequi hic placeat officia, dolores doloremque voluptatem cupiditate id tempore odio fugit dicta ratione. Sed nesciunt reiciendis ipsum dicta esse!</p>
+            <div class="mt-4 sm:mt-6">
+                <a href="#" class="sm:text-base text-sm tracking-wider font-semibold uppercase shadow-lg text-white px-5 py-3 bg-red-600 rounded-lg">Subscribe Channel Youtube</a>
+            </div>
+        </div>
+        
+        
+        <div class="hidden lg:flex lg:w-1/2">
+            <img src="../img/rumah.jpg" alt="rumah" class="object-cover rounded-l-full"/> 
+        </div>
+
+    </div>
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-slate-700 text-3xl">My Gallery</h2>
+    <div class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+        <div class="bg-white rounded shadow-lg rounded-md overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0 lg:w-74">
+            <img src="https://picsum.photos/500/300" alt="Image Caption" class="w-full mx-auto">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Image TItle</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+        </div>
+        </div>
+
+        <div class="bg-white rounded shadow-lg rounded-md overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0 lg:w-74">
+            <img src="https://picsum.photos/500/300" alt="Image Caption" class="w-full mx-auto">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Image TItle</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+        </div>
+        </div>
+
+        <div class="bg-white rounded shadow-lg rounded-md overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0 lg:w-74">
+            <img src="https://picsum.photos/500/300" alt="Image Caption" class="w-full mx-auto">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Image TItle</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+        </div>
+        </div>
+
+        <div class="bg-white rounded shadow-lg rounded-md overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0 lg:w-74">
+            <img src="https://picsum.photos/500/300" alt="Image Caption" class="w-full mx-auto">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Image TItle</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+        </div>
+        </div>
+
+        <div class="bg-white rounded shadow-lg rounded-md overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0 lg:w-74">
+            <img src="https://picsum.photos/500/300" alt="Image Caption" class="w-full mx-auto">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Image TItle</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="mt-2 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 border">
+        <h2 class="md:col-start-4 md:row-start-2 h-15 text-xl font-semibold text-slate-700 md:flex"><span class="self-center">Welcome to My Website</span></h2>
+        <div class="md:col-start-2 md:row-start-2 h-15 text-lg font-bold text-slate-600 md:flex"><span class="self-end">@Herfando</span></div>
+
+        <div class="group grid-card">
+            <div class="grid-card-img bg-[url('/img/grid/1.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-3">
+             <div class="grid-card-img bg-[url('/img/grid/2.jpg')]"></div>
+        </div>
+        <div class="group grid-card">
+             <div class="grid-card-img bg-[url('/img/grid/3.jpg')]"></div>
+        </div>
+        <div class="group grid-card">
+             <div class="grid-card-img bg-[url('/img/grid/4.jpg')]"></div>
+        </div>
+        <div class="group grid-card">
+             <div class="grid-card-img bg-[url('/img/grid/5.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-2">
+             <div class="grid-card-img bg-[url('/img/grid/6.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-4">
+             <div class="grid-card-img bg-[url('/img/grid/7.jpg')]"></div>
+        </div>
+        <div class="group grid-card">
+             <div class="grid-card-img bg-[url('/img/grid/8.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-3">
+             <div class="grid-card-img bg-[url('/img/grid/9.jpg')]"></div>
+        </div>
+        <div class="group grid-card md:col-start-3">
+             <div class="grid-card-img bg-[url('/img/grid/10.jpg')]"></div>
+        </div>
+    </div>
+    
+    <hr class="my-24 border-t-4"/>
+
+    <div>
+    <h1 class="font-bold">Hallo boy</h1>
+    </div>
+    <div class="my-20"></div>
+
+</body>
+</html>
